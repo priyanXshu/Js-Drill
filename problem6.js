@@ -4,7 +4,7 @@
 const problem6 = (inventory) => {
     const result = []
     for(let i=0; i<inventory.length; i++) {
-        if(inventory[i].car_make === 'Audi' || inventory[i].car_make === 'BMW') {
+        if(inventory[i].car_make.includes('Audi') || inventory[i].car_make.includes('BMW')) {
             result.push(inventory[i])
         }
     }
